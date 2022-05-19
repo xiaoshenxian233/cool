@@ -1,14 +1,22 @@
 [custom]
-ruleset=🎬 NETFLIX,https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
-ruleset=🎯 国内分流,https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/list/GuoNeiWangZhan.list
-ruleset=🎯 国内分流,https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/list/IqiyiHMT.list
-ruleset=🎯 国内分流,https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/list/BilibiliHMT.list
-ruleset=🎯 国内分流,[]GEOIP,CN
-ruleset=🚀 全局选择,[]FINAL
+#不要随意改变关键字，否则会导致出错
+#酷酷规则
 
-custom_proxy_group=🚀 全局选择`select`.*
-custom_proxy_group=🎯 国内分流`select`[]DIRECT`[]🚀 全局选择`.*
-custom_proxy_group=🎬 NETFLIX`select`[]🚀 全局选择`.*
+ruleset=NF,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NF.list
+ruleset=游戏,https://raw.githubusercontent.com/xiaoshenxian233/cool/Rule/game.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=国内,[]GEOIP,CN
+ruleset=全局,[]FINAL
+
+custom_proxy_group=全局`select`.*
+custom_proxy_group=国内`select`[]DIRECT`[]全局`.*
+custom_proxy_group=NF`select`[]全局`.*
 
 enable_rule_generator=true
 overwrite_original_rules=true
