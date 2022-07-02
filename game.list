@@ -1,6 +1,5 @@
 # 内容：游戏
-# 数量：4
+# 数量：3
 PROCESS-NAME,com.levelinfinite.apexlegendsmobile
 PROCESS-NAME,com.axlebolt.standoff2
 PROCESS-NAME,com.mojang.minecraftpe
-PROCESS-NAME,com.funcube.loa
